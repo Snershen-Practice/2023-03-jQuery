@@ -37,9 +37,7 @@ $(".backtop-btn").click(function (e) {
 
 $(".nav-item a").click(function (e) {
   if ($(this).siblings().length > 0) {
-    if ($(this).hasClass("nav-item-list")) {
-      e.preventDefault();
-      $(this).next().toggle();
-    }
+    e.preventDefault();
+    $(this).next().toggle();
   }
 });
